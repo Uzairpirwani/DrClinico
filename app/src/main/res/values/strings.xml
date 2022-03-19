@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DrClinico</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="speciality">
+        <item>
+            Family physicians
+        </item>
+        <item>
+            Internists
+        </item>
+        <item>
+            Psychiatrists
+        </item>
+        <item>
+            Obstetricians
+        </item>
+        <item>
+            gynecologists
+        </item>
+        <item>
+            Neurologists
+        </item>
+        <item>
+            Anesthesiologists
+        </item>
+        <item>
+            Cardiologists
+        </item>
+    </string-array>
+</resources>

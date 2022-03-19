@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gradient"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_patient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Patient"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Doctor"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Enter Name"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sl_country"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="10dp"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:text="Select Country"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_baseline_school_24"
+                android:drawablePadding="10dp"
+                android:hint="Qualification"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/pmdc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+                android:drawablePadding="10dp"
+                android:hint="PMDC Number"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawablePadding="10dp"
+                android:hint="Speciality"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24"
+                app:drawableStartCompat="@drawable/ic_baseline_healing_24" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sl_gender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#55C0F8"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/select_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_people_24"
+                    android:drawablePadding="10dp"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:text="Select Gender"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background"
+                android:text="Register"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

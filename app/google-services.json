@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816420749978",
+    "project_id": "drclinico-11375",
+    "storage_bucket": "drclinico-11375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816420749978:android:03b1865554d3507c561523",
+        "android_client_info": {
+          "package_name": "com.example.drclinico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816420749978-h9p7p17l6ljjib4gpo2nn6rg53146p6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXYDYwfiLNgCQWKvMsTsJ43Et1bGiKOuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816420749978-h9p7p17l6ljjib4gpo2nn6rg53146p6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
